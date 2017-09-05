@@ -1,0 +1,27 @@
+
+public class Student {
+	
+	public String nombre;
+	public String carrera;
+	public int codigo;
+	public double promedio;
+
+	public Student() 
+	{
+		
+	}
+	
+	public Student(String nombre, String carrera, int codigo, double promedio) 
+	{
+		this.nombre = nombre;
+		this.carrera = carrera;
+		this.codigo = codigo;
+		this.promedio = promedio;
+		
+	}
+	
+	public String toString() 
+	{
+		return "nombre: " + this.nombre + "\tcarrera: " + this.carrera + "\tcodigo: " + this.codigo + "\tpromedio: " + this.promedio;
+	}
+}
