@@ -1,0 +1,30 @@
+import java.util.Vector;
+public class Listas {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+	      Vector<Student> lista = new Vector<Student>();
+	      
+	      lista.add(new Student("Diego" ,"is", 24121321, 0.5));
+	      lista.add(new Student());
+	      lista.add(new Student("franklin", "is", 021213, 1.5));
+	      lista.add(new Student("Andres", "is", 21363543, 5.0));
+	      
+	      for (int i = 0; i < lista.size(); i++)
+	    	  System.out.println(lista.get(i).toString());
+	    	  
+	    	  System.out.println();
+	    	  lista.remove(1);
+	    	  
+		  for (int i = 0; i < lista.size(); i++)
+		    	  System.out.println(lista.get(i).toString());
+		  
+		  lista.get(1).promedio = 0.5;
+		  
+		  System.out.println();
+		  for (int i = 0; i < lista.size(); i++)
+	    	  System.out.println(lista.get(i).toString());    
+	}
+
+}
